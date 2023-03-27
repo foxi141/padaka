@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css" id="style" />
+
+  </head>
+  <body>
+    
+      <div class="MainPage">
+        <div class="navbar">
+          <a href="">
+            <img
+              src="https://pbs.twimg.com/media/FopA2bxXwAIrOaB.jpg"
+              alt=""
+              style="height: 100px; border-radius: 100%"
+              class="logo"
+            />
+          </a>
+
+          <div class="login">
+            <div class="logon">
+              <a style="text-decoration: none; color: white" href="">Login</a>
+            </div>
+            <div class="register">
+              <a style="text-decoration: none; color: white" href=""
+                >Register</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          
+    <form>
+      <label>
+        <input type="radio" name="style" value="style.css" checked /> Styl 1
+      </label>
+      <label>
+        <input type="radio" name="style" value="style2.css" /> Styl 2
+      </label>
+      <label>
+        <input type="radio" name="style" value="style3.css" /> Styl 3
+      </label>
+    </form>
+        </div>
+        <div class="wrapper" id="Wrapper">
+          <div class="one" id="one"></div>
+          <div class="two" id="two">
+            <img
+              src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kassadin_6.jpg"
+            />
+          </div>
+          <div class="three" id="three"></div>
+          <div class="four" id="four"></div>
+        </div>
+
+        <div class="video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/4V2C0X4qqLY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="footer">
+          <div class="footer-content">
+            <div class="contact">
+              <span><h1>Contact</h1></span>
+              <h2>Patryk Kosicki</h2>
+              <h3>IG:foxis216</h3>
+              Snap:kosik123556
+            </div>
+            <div class="location">
+              <span><h1>Location</h1></span>
+              <h2>Szamotuly ul.czarnucha13</h2>
+            </div>
+
+            <div class="sponsor">
+              <span><h1>Sponsor</h1> </span>
+              <img
+                src="https://bloximages.newyork1.vip.townnews.com/tylerpaper.com/content/tncms/assets/v3/editorial/f/30/f304baec-93f3-5abe-9ef3-6744c6dc42f8/59ef97270d424.image.png?resize=400%2C400"
+                alt=""
+                style="height: 100px; min-height: 1%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  </body>
+</html>
+<script>
+  const radios = document.querySelectorAll('input[type="radio"]');
+
+  radios.forEach((radio) => {
+    radio.addEventListener("change", () => {
+      const styleSheet = document.getElementById("style");
+      styleSheet.href = radio.value;
+    });
+  });
+</script>
+</body>
+</html>
